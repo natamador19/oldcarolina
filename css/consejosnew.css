@@ -1,0 +1,214 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+.consejos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.consejos .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.consejos .intro h2{
+    font-family: 'Allura', cursive;
+    font-size: 80px;
+}
+.consejos .intro p{
+    font-size: 20px;
+    margin-top: -15px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .box {
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px  5px 15px #ccc;
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 40px;
+    font-weight: 400;
+    transition: 1s;
+}
+.container .box:nth-child(1) .icon{
+    box-shadow:  0 0 0 0 #e91e63;
+    background: #e91e63;
+
+}
+
+.container .box:nth-child(1):hover .icon{
+    box-shadow:  0 0 0 400px #e91e63;
+}
+.container .box:nth-child(2) .icon{
+    box-shadow:  0 0 0 0 #e6739f;
+    background: #e6739f;
+
+}
+
+.container .box:nth-child(2):hover .icon{
+    box-shadow:  0 0 0 400px #e6739f;
+}
+.container .box:nth-child(3) .icon{
+    box-shadow:  0 0 0 0 #fdb827;
+    background: #fdb827;
+
+}
+
+.container .box:nth-child(3):hover .icon{
+    box-shadow:  0 0 0 400px #fdb827;
+}
+
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box:hover .content{
+    color: #fff;
+}
+.container .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+}
+.container .box .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 20px;
+}
+.consejol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.consejol .caja{
+    position: relative;
+    width: 100vw;
+    padding: 40px;
+    background-color: #fff;
+    margin: 5px 100px;
+}
+.consejol .caja .contenido{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.consejol .caja .contenido img{
+    width: 500px;
+    height: 600px;
+}
+.consejol .caja .contenido .adentro {
+    margin: 100px;
+}
+.consejol .caja .contenido .adentro h3{
+    font-family: 'Allura', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+.consejol .caja .contenido .adentro ul{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+}
+.consejol .caja .contenido .adentro ul li{
+    list-style-type: circle;
+  
+}
+
+@media all and (max-width:480px){
+    body{
+        overflow-x: hidden;
+        }
+    .intro{
+            display: flex;
+            justify-content: center;
+            width: 230px;
+    }   
+    .consejol .contenido{
+        border-radius: 4px;
+    }
+    .intro h2{
+        font-size: 13px;
+    }
+    .intro p{
+        font-size: 10px;
+    }
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+    }
+}
+
+@media all and (max-width:990px){
+    body{
+    overflow-x: hidden;
+    }
+    .intro{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width:800px;
+    }
+    .intro h2{
+        font-size: 13px;
+    }
+    .intro p{
+        font-size: 10px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+    .contenido img{
+        display: none;
+    }
+  
+}
+

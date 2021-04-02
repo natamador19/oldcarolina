@@ -1,0 +1,14 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+main{
+    margin-top: 5px;
+}
+
+
+

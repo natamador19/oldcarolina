@@ -1,0 +1,102 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+main{
+    margin-top: 5px;
+}
+.img{
+    height: 200px;
+    width: 300px;
+    margin-left: 40vw;
+}
+section.cards{
+    display: flex;
+    justify-content: center;
+    /*max-width: 1000px;*/
+    margin: 0.5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+section.cards .card:hover{
+    transform: scale(1.1);
+}
+
+section.cards h2{
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left:400px;
+}
+
+section.cards .card{
+    display: flex;
+    width: 270px;
+    height: 450px;
+    margin: 1em 0.5em;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 7px #a39a9a;
+    background-color: #fff;
+}
+
+section.cards .card img{
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+   
+}
+
+section.cards .card p{
+    padding: 0.5em;
+    text-align: center;
+    font-size: 14px;
+}
+
+section.cards .card h4{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px ;
+    text-align: center;
+    width: 100%;
+    /*box-shadow: 0px 0px 5px #a39a9a;*/
+}
+
+section.cards .card .button{
+    border: none;
+    background-color:#ff427f;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    width: 150px;
+    
+    margin-bottom: 1em;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: 0.3ss;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+section.cards .card .button:hover{
+    background: #000;
+    box-shadow: 3px 3px 5px #000;
+}
+@media screen and (max-width:480px){
+    .img{
+        height: 200px;
+        width: 300px;
+        margin-left: 10vw;
+    }
+}

@@ -1,0 +1,194 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    background-color:pink;
+    display: flex;
+    border-bottom: 4px #fff dotted;
+    border-top: 4px #fff dotted;
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav ul li{
+    list-style: none;
+    margin-left: 80px ;
+}
+header nav ul li a{
+    display: block;
+    color:#000;
+    font-weight:bolder ;
+    padding: 1em 1.5em;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color:#fff;
+    transform: scale(1.3);
+}
+.logo{
+    height: 250px;
+}
+
+@media all and (max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        height: 123px;
+    }
+    header{
+        position: relative;
+    }
+    header nav{
+        border: none;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+        position: relative;
+        padding: 0px;
+        margin:0px;
+        max-height: 100vh;
+        transition: max-height 1s ease;
+        background-color: pink;
+    }
+    header nav ul.open{
+        max-height:0px;
+        display:none;
+        transition:max-height 1s ease;
+        
+    }
+    header nav ul li{
+        margin-left: 0px;
+        width: 100vw;
+    }
+    header nav ul li:hover{
+        background-color: #ff427f;
+    }
+    header nav ul li a{
+        text-align: center;
+        font-weight: bold;
+    }
+    header nav ul li a:hover{
+        color:#fff;
+    }
+    .burguer{
+        background-color: #fff;
+        width: 35px;
+        height: 20px;
+        margin: 30px 0px 20px 20px;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        right: 20px;
+        top:23px;
+    }
+
+    .burguer div{
+        background-color: #000;
+        width: 100%;
+        height: 1px;
+        display: block;
+    }
+    
+}
+
+
+@media all and (max-width:980px){
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        height: 123px;
+    }
+    header{
+        position: relative;
+    }
+    header nav{
+        border: none;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+        position: relative;
+        padding: 0px;
+        margin:0px;
+        max-height: 100vh;
+        transition: max-height 1s ease;
+        background-color: pink;
+    }
+    header nav ul.open{
+        max-height: 0px;
+        display:none;
+        transition:max-height 1s ease;
+        
+    }
+    header nav ul li{
+        margin-left: 0px;
+        width: 100vw;
+    }
+    header nav ul li:hover{
+        background-color: #ff427f;
+    }
+    header nav ul li a{
+        text-align: center;
+        font-weight: bold;
+    }
+    header nav ul li a:hover{
+        color:#fff;
+    }
+    .burguer{
+        background-color: #fff;
+        width: 35px;
+        height: 20px;
+        margin: 30px 0px 20px 20px;
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        right: 20px;
+        top:23px;
+    }
+
+    .burguer div{
+        background-color: #000;
+        width: 100%;
+        height: 1px;
+        display: block;
+    }
+    
+  
+}
+
+@media all and (min-width:1054px){
+    header nav{
+        background-color:pink;
+        display: flex;
+        border-bottom: 4px #fff dotted;
+        border-top: 4px #fff dotted;
+        width: 100vw;
+    }
+    
+}

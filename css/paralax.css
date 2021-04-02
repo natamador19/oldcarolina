@@ -1,0 +1,20 @@
+
+section.paralax {
+    background-image: url('../img/paralax.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    min-width:100vw; /* viewport width */
+    min-height: 100vh; /* viewport height*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  section.paralax h2{
+    font-size:4rem;
+    color:#000;
+    padding:1em;
+  }
